@@ -16,63 +16,16 @@ using System.Runtime.Serialization;
 public class InventoryObject : ScriptableObject
 {
     public ItemDatabaseObject database;
-    //public InterfaceType type;
     public Inventory container;
-
-    //private Inventory newContainer;
-    //public Inventory categoryContainer;
-    //public ItemType itemCategory;
-
-    /*private void CategorySwitch()
-    {
-        switch(itemCategory)
-        {
-            case InventoryCategory.All:
-                Debug.Log("consumables");
-                break;
-            case InventoryCategory.Consumables:
-                Debug.Log("weapon");
-                break;
-            case InventoryCategory.Weapon:
-                Debug.Log("weapon");
-                break;
-            case InventoryCategory.Armor:
-                Debug.Log("armor");
-                break;
-            default:
-                Debug.Log("all");
-                break;
-        }
-    }*/
-    
     public InventorySlot[] GetSlots { get { return container.Slots; } }
-    //public InventorySlot[] GetCategorySlots { get { return categoryContainer.Slots; } }    
 
-    public bool AddItem(Item _item, int _amount /* ItemType _itemType */)
+
+    public bool AddItem(Item _item, int _amount)
     {
-        /*if (EmptySlotCount <= 0)
-            return false;
-        if (_itemType == database.ItemObjects[_item.Id].type)
-        {
-            InventorySlot slot = FindItemOnInventory(_item);
-            if(!database.ItemObjects[_item.Id].stackable || slot == null)
-            {
-                SetEmptySlot(_item, _amount);
-                return true;
-            }
-            slot.AddAmount(_amount);
-            return true;
-        }
-        else
-        {
-            return false;
-        }*/
-        
-        
         if (EmptySlotCount <= 0)
             return false;
         InventorySlot slot = FindItemOnInventory(_item);
-        if(!database.ItemObjects[_item.Id].stackable || slot == null)
+        if(!database.ItemObjects[_item.Id].stackable ||  slot == null)
         {
             SetEmptySlot(_item, _amount);
             return true;
@@ -80,35 +33,8 @@ public class InventoryObject : ScriptableObject
         slot.AddAmount(_amount);
         return true;
     }
-
-    /*public void SwitchCategory(ItemType _itemType)
-    {
-        int j = 0;
-        for (int i = 0; i < container.Slots.Length; i++)
-        {
-            //Debug.Log(GetSlots[i].ItemObject.type);
-            
-            if (GetSlots[i].item.Id >= 0 && GetSlots[i].ItemObject.type == _itemType)
-            {
-                categoryContainer.Slots[j] = container.Slots[i];
-                j++;
-            }
-        }
-        //container = categoryContainer;
-        Debug.Log("After copy" + categoryContainer.Slots.Length);
-        
-    }*/
-
-    public void AddItemsAtStart()
-    {
-        AddItem(database.ItemObjects[0].data, 1);
-        AddItem(database.ItemObjects[1].data, 1);
-        AddItem(database.ItemObjects[5].data, 1);
-        AddItem(database.ItemObjects[6].data, 1);
-        AddItem(database.ItemObjects[9].data, 1);
-        AddItem(database.ItemObjects[10].data, 1);
-    }
     
+    //public void AddItemAtStart()
     
     public int EmptySlotCount
     {
@@ -123,7 +49,6 @@ public class InventoryObject : ScriptableObject
                 }
             }
             return counter;
-            
         }
     }
     public InventorySlot FindItemOnInventory(Item _item)
@@ -165,7 +90,6 @@ public class InventoryObject : ScriptableObject
     public void Clear()
     {
         container.Clear();
-        //categoryContainer.Clear();
     }
 }
 
