@@ -12,4 +12,147 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 870612b916f578c43adfe831455fa793, type: 3}
   m_Name: ShopInventory
   m_EditorClassIdentifier: 
-  container: []
+  database: {fileID: 11400000, guid: 45706a0c5db78ab489e09e43f4124943, type: 2}
+  Container:
+    Slots:
+    - AllowedItems: 
+      item:
+        Id: 0
+        price: 10
+      amount: 2
+    - AllowedItems: 
+      item:
+        Id: 1
+        price: 30
+      amount: 2
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: 3
+        price: 10
+      amount: 1
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: 1
+        price: 30
+      amount: 1
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: 2
+        price: 15
+      amount: 1
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+    - AllowedItems: 
+      item:
+        Id: -1
+        price: 10
+      amount: 0
+  itemCategory: 0

@@ -15,5 +15,13 @@ MonoBehaviour:
   ItemObjects:
   - {fileID: 11400000, guid: 5130a28c00eb9d34c9273e83b7ecef6b, type: 2}
   - {fileID: 11400000, guid: b2222da3d2e5da742ae9952eeb002ab7, type: 2}
-  - {fileID: 11400000, guid: 6cd1dcee64a2ea545b6b9455327a4915, type: 2}
+  - {fileID: 11400000, guid: 7bda858b56d49fc4d9572767eb5f31a4, type: 2}
+  - {fileID: 11400000, guid: 820387c190505c84dafb2edac44ec486, type: 2}
+  - {fileID: 11400000, guid: 048421e47c345a3498ba2a91a25c4c71, type: 2}
+  - {fileID: 11400000, guid: ef86fb38039166c4ba10169d3274adc4, type: 2}
+  - {fileID: 11400000, guid: 9fee8d43a8a43a748a42ed5e975ea6bd, type: 2}
+  - {fileID: 11400000, guid: 811385c02a495e54aa766f89da627b59, type: 2}
+  - {fileID: 11400000, guid: 20594c5c7c7e6834281567cebaf614b4, type: 2}
+  - {fileID: 11400000, guid: 2a8afa10a0f6e7a41b4e87d5408693ea, type: 2}
   - {fileID: 11400000, guid: 4df5544cb1ade1848bea49ae927d28c5, type: 2}
+  - {fileID: 11400000, guid: efb16941d51dd674a9511e020e3bc59e, type: 2}
